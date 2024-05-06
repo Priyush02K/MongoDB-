@@ -1,0 +1,116 @@
+students> db.data.insertOne({
+... name:"Priyush",
+... age:25,
+... Course:"BE-IOT"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('66004d98af932b693e517f01')
+}
+
+
+students> db.data.insertMany([
+... {
+... name:"Hardik",
+... age:21,
+... Course:"BE AIDS"},
+... {
+... name:"Sakshi",
+... age:23,
+... Course:"BE IT"
+... }
+... ])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('66004e61af932b693e517f02'),
+    '1': ObjectId('66004e61af932b693e517f03')
+  }
+}
+
+
+
+
+------update------
+ db.data.updateOne({name:"Sakshi"} ,{$set:{}}                            students> db.data.updateOne({name:"Sakshi"} ,{$set:{}}students>
+
+students> students> db.data.updateOne({name:"Sakshi"} ,{$set:{age:26}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+
+
+----delete------
+students> db.data.find()
+[
+  {
+    _id: ObjectId('65f9d85b01de3178cb6e6a00'),
+    name: 'priyush',
+    age: 26
+  },
+  { _id: ObjectId('65f9d90c01de3178cb6e6a01'), name: 'Rohit', age: 20 },
+  { _id: ObjectId('65f9d90c01de3178cb6e6a02'), name: 'isha', age: 24 },
+  {
+    _id: ObjectId('65f9d90c01de3178cb6e6a03'),
+    name: 'Nikhil',
+    age: 19
+  },
+  {
+    _id: ObjectId('66004d98af932b693e517f01'),
+    name: 'Priyush',
+    age: 25,
+    Course: 'BE-IOT'
+  },
+  {
+    _id: ObjectId('66004e61af932b693e517f02'),
+    name: 'Hardik',
+    age: 21,
+    Course: 'BE AIDS'
+  },
+  {
+    _id: ObjectId('66004e61af932b693e517f03'),
+    name: 'Sakshi',
+    age: 26,
+    Course: 'BE IT'
+  }
+]
+students> db.data.delete
+db.data.deleteMany  db.data.deleteOne
+
+students> db.data.deleteOne({name:"Rohit"})
+{ acknowledged: true, deletedCount: 1 }
+students> db.data.find()
+[
+  {
+    _id: ObjectId('65f9d85b01de3178cb6e6a00'),
+    name: 'priyush',
+    age: 26
+  },
+  { _id: ObjectId('65f9d90c01de3178cb6e6a02'), name: 'isha', age: 24 },
+  {
+    _id: ObjectId('65f9d90c01de3178cb6e6a03'),
+    name: 'Nikhil',
+    age: 19
+  },
+  {
+    _id: ObjectId('66004d98af932b693e517f01'),
+    name: 'Priyush',
+    age: 25,
+    Course: 'BE-IOT'
+  },
+  {
+    _id: ObjectId('66004e61af932b693e517f02'),
+    name: 'Hardik',
+    age: 21,
+    Course: 'BE AIDS'
+  },
+  {
+    _id: ObjectId('66004e61af932b693e517f03'),
+    name: 'Sakshi',
+    age: 26,
+    Course: 'BE IT'
+  }
+]

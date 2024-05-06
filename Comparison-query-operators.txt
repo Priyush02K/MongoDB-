@@ -1,0 +1,119 @@
+
+------------------------------------------------------EQUAL TO---------------------------------
+Products> db.shop.find({'price':{$eq:699}})
+[
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9262'),
+    name: 'Smartphone Model X',
+    company: '64c23350e32f4a51b19b9230',
+    price: 699,
+    colors: [ '#000000', '#ffffff', '#ff0000' ],
+    image: '/images/product-smartphone.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9280'),
+    name: 'Elegant Dining Table',
+    company: '64c23350e32f4a51b19b9239',
+    price: 699,
+    colors: [ '#ffffff', '#ffcc00', '#cc9900' ],
+    image: '/images/product-dining-table.png',
+    category: '64c2342de32f4a51b19b925a',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9295'),
+    name: 'Elegant Dining Table',
+    company: '64c23350e32f4a51b19b9239',
+    price: 699,
+    colors: [ '#ffffff', '#ffcc00', '#cc9900' ],
+    image: '/images/product-dining-table.png',
+    category: '64c2342de32f4a51b19b925a',
+    isFeatured: true
+  },....................
+Products> db.shop.find({'price':{$eq:699}}).count()
+13
+
+---------------------------------------------------------------------NOT EQUAL TO-----------------------------
+Products> db.shop.find({'price':{$ne:699}})
+[
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9263'),
+    name: 'Laptop Pro',
+    company: '64c23350e32f4a51b19b9231',
+    price: 1299,
+    colors: [ '#333333', '#cccccc', '#00ff00' ],
+    image: '/images/product-laptop.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9264'),
+    name: 'Smart Watch',
+    company: '64c23350e32f4a51b19b9232',
+    price: 249,
+    colors: [ '#000000', '#ff0000', '#00ff00' ],
+    image: '/images/product-smartwatch.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9265'),
+    name: 'Kitchen Blender',
+    company: '64c23350e32f4a51b19b9233',
+    price: 89,
+    colors: [ '#ffffff', '#ff9900', '#990000' ],
+    image: '/images/product-blender.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9266'),
+    name: 'Fashionable Sunglasses',
+    company: '64c23350e32f4a51b19b9234',
+    price: 129,
+    colors: [ '#000000', '#666666', '#ffcc00' ],
+    image: '/images/product-sunglasses.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: false
+  },...
+
+Products> db.shop.find({'price':{$gt:699}}).count()
+3053
+
+
+-------------------------------------------GRRTER THAN ---------------------------------
+
+Products> db.shop.find({'price':{$gte:699}}).count()
+3066
+
+-------------------------------------------LESS THAN ---------------------------------
+Products> db.shop.find({'price':{$lt:699}}).count()
+7289
+----------------------------------------------------------------------------------
+Products> db.shop.find({'price':{$lte:699}}).count()
+7302
+---------------------------------------------------------------------------------------
+Products> db.shop.find({'price':{$in:[699,129,183,5]}})
+[
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9262'),
+    name: 'Smartphone Model X',
+    company: '64c23350e32f4a51b19b9230',
+    price: 699,
+    colors: [ '#000000', '#ffffff', '#ff0000' ],
+    image: '/images/product-smartphone.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9266'),
+    name: 'Fashionable Sunglasses',
+    company: '64c23350e32f4a51b19b9234',
+    price: 129,
+    colors: [ '#000000', '#666666', '#ffcc00' ],
+    image: '/images/product-sunglasses.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: false
+  },

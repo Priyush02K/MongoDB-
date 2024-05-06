@@ -1,0 +1,1070 @@
+Microsoft Windows [Version 10.0.19045.4291]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\priyush>mongosh
+Current Mongosh Log ID: 663735067ba87af4a3108070
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.1.5
+Using MongoDB:          7.0.6
+Using Mongosh:          2.1.5
+mongosh 2.2.5 is available for download: https://www.mongodb.com/try/download/shell
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2024-05-01T12:04:53.945+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> show dbs
+BooksStore  72.00 KiB
+Products     1.32 MiB
+admin       40.00 KiB
+config      48.00 KiB
+local       72.00 KiB
+students    72.00 KiB
+test> use Products
+switched to db Products
+Products> db.shop.find()
+[
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9262'),
+    name: 'Smartphone Model X',
+    company: '64c23350e32f4a51b19b9230',
+    price: 699,
+    colors: [ '#000000', '#ffffff', '#ff0000' ],
+    image: '/images/product-smartphone.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9263'),
+    name: 'Laptop Pro',
+    company: '64c23350e32f4a51b19b9231',
+    price: 1299,
+    colors: [ '#333333', '#cccccc', '#00ff00' ],
+    image: '/images/product-laptop.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9264'),
+    name: 'Smart Watch',
+    company: '64c23350e32f4a51b19b9232',
+    price: 249,
+    colors: [ '#000000', '#ff0000', '#00ff00' ],
+    image: '/images/product-smartwatch.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9265'),
+    name: 'Kitchen Blender',
+    company: '64c23350e32f4a51b19b9233',
+    price: 89,
+    colors: [ '#ffffff', '#ff9900', '#990000' ],
+    image: '/images/product-blender.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9266'),
+    name: 'Fashionable Sunglasses',
+    company: '64c23350e32f4a51b19b9234',
+    price: 129,
+    colors: [ '#000000', '#666666', '#ffcc00' ],
+    image: '/images/product-sunglasses.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9267'),
+    name: 'Skin Care Set',
+    company: '64c23350e32f4a51b19b9235',
+    price: 59,
+    colors: [ '#ffffff', '#ff99cc', '#00cc99' ],
+    image: '/images/product-skincare.png',
+    category: '64c2342de32f4a51b19b9251',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9268'),
+    name: 'Outdoor Camping Tent',
+    company: '64c23350e32f4a51b19b9236',
+    price: 299,
+    colors: [ '#333333', '#99cc00', '#ffcc00' ],
+    image: '/images/product-tent.png',
+    category: '64c2342de32f4a51b19b9252',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9269'),
+    name: 'Building Blocks Set',
+    company: '64c23350e32f4a51b19b9237',
+    price: 49,
+    colors: [ '#ff0000', '#00ff00', '#0000ff' ],
+    image: '/images/product-building-blocks.png',
+    category: '64c2342de32f4a51b19b9253',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926a'),
+    name: 'Car Jump Starter',
+    company: '64c23350e32f4a51b19b9238',
+    price: 89,
+    colors: [ '#000000', '#999999', '#00ff00' ],
+    image: '/images/product-jump-starter.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926b'),
+    name: 'Cookware Set',
+    company: '64c23350e32f4a51b19b9239',
+    price: 149,
+    colors: [ '#ffffff', '#ffcc00', '#cc9900' ],
+    image: '/images/product-cookware.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926c'),
+    name: 'Designer Handbag',
+    company: '64c23350e32f4a51b19b923a',
+    price: 349,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-handbag.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926d'),
+    name: 'Gym Equipment Set',
+    company: '64c23350e32f4a51b19b923b',
+    price: 799,
+    colors: [ '#333333', '#ff9900', '#660000' ],
+    image: '/images/product-gym-equipment.png',
+    category: '64c2342de32f4a51b19b925e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926e'),
+    name: 'Car Cleaning Kit',
+    company: '64c23350e32f4a51b19b923c',
+    price: 29,
+    colors: [ '#000000', '#666666', '#cc9900' ],
+    image: '/images/product-car-cleaning.png',
+    category: '64c2342de32f4a51b19b9254',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926f'),
+    name: 'Cookbook Collection',
+    company: '64c23350e32f4a51b19b923d',
+    price: 69,
+    colors: [ '#ffffff', '#ff9900', '#0099ff' ],
+    image: '/images/product-cookbook.png',
+    category: '64c2342de32f4a51b19b9255',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9270'),
+    name: 'Healthy Snack Pack',
+    company: '64c23350e32f4a51b19b923e',
+    price: 19,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-snack-pack.png',
+    category: '64c2342de32f4a51b19b9256',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9271'),
+    name: 'Pet Grooming Kit',
+    company: '64c23350e32f4a51b19b923e',
+    price: 39,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-pet-grooming.png',
+    category: '64c2342de32f4a51b19b9257',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9272'),
+    name: 'Modern Sofa Set',
+    company: '64c23350e32f4a51b19b923f',
+    price: 899,
+    colors: [ '#000000', '#999999', '#cc6600' ],
+    image: '/images/product-sofa-set.png',
+    category: '64c2342de32f4a51b19b9258',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9273'),
+    name: 'Silver Necklace',
+    company: '64c23350e32f4a51b19b9240',
+    price: 149,
+    colors: [ '#ffffff', '#ffcc00', '#cc9900' ],
+    image: '/images/product-necklace.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9274'),
+    name: 'Outdoor Dining Set',
+    company: '64c23350e32f4a51b19b9241',
+    price: 599,
+    colors: [ '#333333', '#ff9900', '#660000' ],
+    image: '/images/product-dining-set.png',
+    category: '64c2342de32f4a51b19b925a',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9275'),
+    name: 'Air Fryer',
+    company: '64c23350e32f4a51b19b9242',
+    price: 129,
+    colors: [ '#000000', '#666666', '#cc9900' ],
+    image: '/images/product-air-fryer.png',
+    category: '64c2342de32f4a51b19b925b',
+    isFeatured: false
+  }
+]
+Type "it" for more
+-----------------------------------------------------------------------count()----------------------------
+Products> db.shop.find({'price':{$in:[699,129,69]}}).count()
+51
+
+-----------------------------------------------------------------------limit()----------------------------
+Products> db.shop.find({'price':{$in:[699,129,69]}}).limit(3)
+[
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9262'),
+    name: 'Smartphone Model X',
+    company: '64c23350e32f4a51b19b9230',
+    price: 699,
+    colors: [ '#000000', '#ffffff', '#ff0000' ],
+    image: '/images/product-smartphone.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9266'),
+    name: 'Fashionable Sunglasses',
+    company: '64c23350e32f4a51b19b9234',
+    price: 129,
+    colors: [ '#000000', '#666666', '#ffcc00' ],
+    image: '/images/product-sunglasses.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926f'),
+    name: 'Cookbook Collection',
+    company: '64c23350e32f4a51b19b923d',
+    price: 69,
+    colors: [ '#ffffff', '#ff9900', '#0099ff' ],
+    image: '/images/product-cookbook.png',
+    category: '64c2342de32f4a51b19b9255',
+    isFeatured: true
+  }
+]
+
+-----------------------------------------------------------------------skip()----------------------------
+Products> db.shop.find({'price':{$in:[699,129,69]}}).limit(3).skip(1)
+[
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9266'),
+    name: 'Fashionable Sunglasses',
+    company: '64c23350e32f4a51b19b9234',
+    price: 129,
+    colors: [ '#000000', '#666666', '#ffcc00' ],
+    image: '/images/product-sunglasses.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926f'),
+    name: 'Cookbook Collection',
+    company: '64c23350e32f4a51b19b923d',
+    price: 69,
+    colors: [ '#ffffff', '#ff9900', '#0099ff' ],
+    image: '/images/product-cookbook.png',
+    category: '64c2342de32f4a51b19b9255',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9275'),
+    name: 'Air Fryer',
+    company: '64c23350e32f4a51b19b9242',
+    price: 129,
+    colors: [ '#000000', '#666666', '#cc9900' ],
+    image: '/images/product-air-fryer.png',
+    category: '64c2342de32f4a51b19b925b',
+    isFeatured: false
+  }
+]
+Products> db.shop.find({'price':{$nin:[699,129,69]}}).limit(6)
+[
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9263'),
+    name: 'Laptop Pro',
+    company: '64c23350e32f4a51b19b9231',
+    price: 1299,
+    colors: [ '#333333', '#cccccc', '#00ff00' ],
+    image: '/images/product-laptop.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9264'),
+    name: 'Smart Watch',
+    company: '64c23350e32f4a51b19b9232',
+    price: 249,
+    colors: [ '#000000', '#ff0000', '#00ff00' ],
+    image: '/images/product-smartwatch.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9265'),
+    name: 'Kitchen Blender',
+    company: '64c23350e32f4a51b19b9233',
+    price: 89,
+    colors: [ '#ffffff', '#ff9900', '#990000' ],
+    image: '/images/product-blender.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9267'),
+    name: 'Skin Care Set',
+    company: '64c23350e32f4a51b19b9235',
+    price: 59,
+    colors: [ '#ffffff', '#ff99cc', '#00cc99' ],
+    image: '/images/product-skincare.png',
+    category: '64c2342de32f4a51b19b9251',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9268'),
+    name: 'Outdoor Camping Tent',
+    company: '64c23350e32f4a51b19b9236',
+    price: 299,
+    colors: [ '#333333', '#99cc00', '#ffcc00' ],
+    image: '/images/product-tent.png',
+    category: '64c2342de32f4a51b19b9252',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9269'),
+    name: 'Building Blocks Set',
+    company: '64c23350e32f4a51b19b9237',
+    price: 49,
+    colors: [ '#ff0000', '#00ff00', '#0000ff' ],
+    image: '/images/product-building-blocks.png',
+    category: '64c2342de32f4a51b19b9253',
+    isFeatured: true
+  }
+]
+
+-----------------------------------------------------------------------sort()----------------------------
+Products> db.shop.find({'price':{$nin:[699,129,69]}}).limit(6).sort({'price':1})
+
+[
+  {
+    _id: ObjectId('64c2342de32f4a51b19b9250'),
+    name: 'Fashion',
+    slug: 'fashion'
+  },
+  {
+    _id: ObjectId('64c2342de32f4a51b19b924f'),
+    name: 'Home & Kitchen',
+    slug: 'home-kitchen'
+  },
+  {
+    _id: ObjectId('64c2342de32f4a51b19b9251'),
+    name: 'Health & Beauty',
+    slug: 'health-beauty'
+  },
+  {
+    _id: ObjectId('64c2342de32f4a51b19b9253'),
+    name: 'Toys & Games',
+    slug: 'toys-games'
+  },
+  {
+    _id: ObjectId('64c2342de32f4a51b19b9252'),
+    name: 'Sports & Outdoors',
+    slug: 'sports-outdoors'
+  },
+  {
+    _id: ObjectId('64c2342de32f4a51b19b924e'),
+    name: 'Electronics',
+    slug: 'electronics'
+  }
+]
+Products> db.shop.find({'price':{$gt:1250}}).limit(6).sort({'price':1})
+[
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9263'),
+    name: 'Laptop Pro',
+    company: '64c23350e32f4a51b19b9231',
+    price: 1299,
+    colors: [ '#333333', '#cccccc', '#00ff00' ],
+    image: '/images/product-laptop.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9281'),
+    name: 'Diamond Ring',
+    company: '64c23350e32f4a51b19b923a',
+    price: 1999,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-diamond-ring.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9296'),
+    name: 'Diamond Ring',
+    company: '64c23350e32f4a51b19b923a',
+    price: 1999,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-diamond-ring.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  }
+]
+Products> db.shop.find({'price':{$nin:[699,129,69]}}).limit(6).sort({'price':-1})
+[
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9281'),
+    name: 'Diamond Ring',
+    company: '64c23350e32f4a51b19b923a',
+    price: 1999,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-diamond-ring.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9296'),
+    name: 'Diamond Ring',
+    company: '64c23350e32f4a51b19b923a',
+    price: 1999,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-diamond-ring.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9263'),
+    name: 'Laptop Pro',
+    company: '64c23350e32f4a51b19b9231',
+    price: 1299,
+    colors: [ '#333333', '#cccccc', '#00ff00' ],
+    image: '/images/product-laptop.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9297'),
+    name: 'Outdoor Patio Set',
+    company: '64c23350e32f4a51b19b923b',
+    price: 1199,
+    colors: [ '#333333', '#ff9900', '#660000' ],
+    image: '/images/product-outdoor-patio.png',
+    category: '64c2342de32f4a51b19b925a',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9282'),
+    name: 'Outdoor Patio Set',
+    company: '64c23350e32f4a51b19b923b',
+    price: 1199,
+    colors: [ '#333333', '#ff9900', '#660000' ],
+    image: '/images/product-outdoor-patio.png',
+    category: '64c2342de32f4a51b19b925a',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23edf9dc1fb2f8560190f'),
+    name: 'Unbranded Bronze Bike',
+    company: ObjectId('64c23350e32f4a51b19b924c'),
+    price: 1000,
+    colors: [ '#3f617a' ],
+    image: '/images/product-Tasty.png',
+    category: ObjectId('64c2342de32f4a51b19b9255'),
+    isFeatured: false,
+    __v: 0
+  }
+]
+
+-----------------------------------------------------------------------next()----------------------------
+Products> db.shop.find({'price':{$nin:[699,129,69]}}).limit(6).next()
+{
+  _id: ObjectId('64c23601e32f4a51b19b9263'),
+  name: 'Laptop Pro',
+  company: '64c23350e32f4a51b19b9231',
+  price: 1299,
+  colors: [ '#333333', '#cccccc', '#00ff00' ],
+  image: '/images/product-laptop.png',
+  category: '64c2342de32f4a51b19b924e',
+  isFeatured: true
+}
+-----------------------------------------------------------------------size()----------------------------
+Products> db.shop.find({'price':1000}).size()
+23
+-----------------------------------------------------------------------toArray()----------------------------
+Products> db.shop.find().toArray()
+[
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9262'),
+    name: 'Smartphone Model X',
+    company: '64c23350e32f4a51b19b9230',
+    price: 699,
+    colors: [ '#000000', '#ffffff', '#ff0000' ],
+    image: '/images/product-smartphone.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9263'),
+    name: 'Laptop Pro',
+    company: '64c23350e32f4a51b19b9231',
+    price: 1299,
+    colors: [ '#333333', '#cccccc', '#00ff00' ],
+    image: '/images/product-laptop.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9264'),
+    name: 'Smart Watch',
+    company: '64c23350e32f4a51b19b9232',
+    price: 249,
+    colors: [ '#000000', '#ff0000', '#00ff00' ],
+    image: '/images/product-smartwatch.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9265'),
+    name: 'Kitchen Blender',
+    company: '64c23350e32f4a51b19b9233',
+    price: 89,
+    colors: [ '#ffffff', '#ff9900', '#990000' ],
+    image: '/images/product-blender.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9266'),
+    name: 'Fashionable Sunglasses',
+    company: '64c23350e32f4a51b19b9234',
+    price: 129,
+    colors: [ '#000000', '#666666', '#ffcc00' ],
+    image: '/images/product-sunglasses.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9267'),
+    name: 'Skin Care Set',
+    company: '64c23350e32f4a51b19b9235',
+    price: 59,
+    colors: [ '#ffffff', '#ff99cc', '#00cc99' ],
+    image: '/images/product-skincare.png',
+    category: '64c2342de32f4a51b19b9251',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9268'),
+    name: 'Outdoor Camping Tent',
+    company: '64c23350e32f4a51b19b9236',
+    price: 299,
+    colors: [ '#333333', '#99cc00', '#ffcc00' ],
+    image: '/images/product-tent.png',
+    category: '64c2342de32f4a51b19b9252',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9269'),
+    name: 'Building Blocks Set',
+    company: '64c23350e32f4a51b19b9237',
+    price: 49,
+    colors: [ '#ff0000', '#00ff00', '#0000ff' ],
+    image: '/images/product-building-blocks.png',
+    category: '64c2342de32f4a51b19b9253',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926a'),
+    name: 'Car Jump Starter',
+    company: '64c23350e32f4a51b19b9238',
+    price: 89,
+    colors: [ '#000000', '#999999', '#00ff00' ],
+    image: '/images/product-jump-starter.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926b'),
+    name: 'Cookware Set',
+    company: '64c23350e32f4a51b19b9239',
+    price: 149,
+    colors: [ '#ffffff', '#ffcc00', '#cc9900' ],
+    image: '/images/product-cookware.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926c'),
+    name: 'Designer Handbag',
+    company: '64c23350e32f4a51b19b923a',
+    price: 349,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-handbag.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926d'),
+    name: 'Gym Equipment Set',
+    company: '64c23350e32f4a51b19b923b',
+    price: 799,
+    colors: [ '#333333', '#ff9900', '#660000' ],
+    image: '/images/product-gym-equipment.png',
+    category: '64c2342de32f4a51b19b925e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926e'),
+    name: 'Car Cleaning Kit',
+    company: '64c23350e32f4a51b19b923c',
+    price: 29,
+    colors: [ '#000000', '#666666', '#cc9900' ],
+    image: '/images/product-car-cleaning.png',
+    category: '64c2342de32f4a51b19b9254',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926f'),
+    name: 'Cookbook Collection',
+    company: '64c23350e32f4a51b19b923d',
+    price: 69,
+    colors: [ '#ffffff', '#ff9900', '#0099ff' ],
+    image: '/images/product-cookbook.png',
+    category: '64c2342de32f4a51b19b9255',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9270'),
+    name: 'Healthy Snack Pack',
+    company: '64c23350e32f4a51b19b923e',
+    price: 19,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-snack-pack.png',
+    category: '64c2342de32f4a51b19b9256',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9271'),
+    name: 'Pet Grooming Kit',
+    company: '64c23350e32f4a51b19b923e',
+    price: 39,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-pet-grooming.png',
+    category: '64c2342de32f4a51b19b9257',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9272'),
+    name: 'Modern Sofa Set',
+    company: '64c23350e32f4a51b19b923f',
+    price: 899,
+    colors: [ '#000000', '#999999', '#cc6600' ],
+    image: '/images/product-sofa-set.png',
+    category: '64c2342de32f4a51b19b9258',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9273'),
+    name: 'Silver Necklace',
+    company: '64c23350e32f4a51b19b9240',
+    price: 149,
+    colors: [ '#ffffff', '#ffcc00', '#cc9900' ],
+    image: '/images/product-necklace.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9274'),
+    name: 'Outdoor Dining Set',
+    company: '64c23350e32f4a51b19b9241',
+    price: 599,
+    colors: [ '#333333', '#ff9900', '#660000' ],
+    image: '/images/product-dining-set.png',
+    category: '64c2342de32f4a51b19b925a',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9275'),
+    name: 'Air Fryer',
+    company: '64c23350e32f4a51b19b9242',
+    price: 129,
+    colors: [ '#000000', '#666666', '#cc9900' ],
+    image: '/images/product-air-fryer.png',
+    category: '64c2342de32f4a51b19b925b',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9276'),
+    name: 'Kids Educational Toys',
+    company: '64c23350e32f4a51b19b9243',
+    price: 39,
+    colors: [ '#ffffff', '#ff9900', '#0099ff' ],
+    image: '/images/product-educational-toys.png',
+    category: '64c2342de32f4a51b19b9253',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9277'),
+    name: 'Wireless Earbuds',
+    company: '64c23350e32f4a51b19b9230',
+    price: 79,
+    colors: [ '#000000', '#ff0000', '#00ff00' ],
+    image: '/images/product-earbuds.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9278'),
+    name: 'Robot Vacuum Cleaner',
+    company: '64c23350e32f4a51b19b9231',
+    price: 299,
+    colors: [ '#ffffff', '#ffcc00', '#00cc99' ],
+    image: '/images/product-vacuum.png',
+    category: '64c2342de32f4a51b19b925b',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9279'),
+    name: 'Wireless Gaming Mouse',
+    company: '64c23350e32f4a51b19b9232',
+    price: 49,
+    colors: [ '#000000', '#999999', '#00ff00' ],
+    image: '/images/product-gaming-mouse.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b927a'),
+    name: 'Slow Cooker',
+    company: '64c23350e32f4a51b19b9233',
+    price: 79,
+    colors: [ '#333333', '#ff9900', '#990000' ],
+    image: '/images/product-slow-cooker.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b927b'),
+    name: 'Designer Watch',
+    company: '64c23350e32f4a51b19b9234',
+    price: 299,
+    colors: [ '#000000', '#666666', '#ffcc00' ],
+    image: '/images/product-designer-watch.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b927c'),
+    name: 'Fitness Tracker',
+    company: '64c23350e32f4a51b19b9235',
+    price: 129,
+    colors: [ '#ffffff', '#ff99cc', '#00cc99' ],
+    image: '/images/product-fitness-tracker.png',
+    category: '64c2342de32f4a51b19b925e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b927d'),
+    name: 'Car Seat Covers',
+    company: '64c23350e32f4a51b19b9236',
+    price: 59,
+    colors: [ '#333333', '#99cc00', '#ffcc00' ],
+    image: '/images/product-car-seat-covers.png',
+    category: '64c2342de32f4a51b19b9254',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b927e'),
+    name: 'Notebook Collection',
+    company: '64c23350e32f4a51b19b9237',
+    price: 19,
+    colors: [ '#ff0000', '#00ff00', '#0000ff' ],
+    image: '/images/product-notebook.png',
+    category: '64c2342de32f4a51b19b9255',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b927f'),
+    name: 'Pet Food Bowl Set',
+    company: '64c23350e32f4a51b19b9238',
+    price: 29,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-pet-bowl-set.png',
+    category: '64c2342de32f4a51b19b9257',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9280'),
+    name: 'Elegant Dining Table',
+    company: '64c23350e32f4a51b19b9239',
+    price: 699,
+    colors: [ '#ffffff', '#ffcc00', '#cc9900' ],
+    image: '/images/product-dining-table.png',
+    category: '64c2342de32f4a51b19b925a',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9281'),
+    name: 'Diamond Ring',
+    company: '64c23350e32f4a51b19b923a',
+    price: 1999,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-diamond-ring.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9282'),
+    name: 'Outdoor Patio Set',
+    company: '64c23350e32f4a51b19b923b',
+    price: 1199,
+    colors: [ '#333333', '#ff9900', '#660000' ],
+    image: '/images/product-outdoor-patio.png',
+    category: '64c2342de32f4a51b19b925a',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9283'),
+    name: 'Blender & Juicer Combo',
+    company: '64c23350e32f4a51b19b923c',
+    price: 149,
+    colors: [ '#000000', '#666666', '#cc9900' ],
+    image: '/images/product-blender-juicer.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9284'),
+    name: 'Watercolor Paint Set',
+    company: '64c23350e32f4a51b19b923d',
+    price: 29,
+    colors: [ '#ffffff', '#ff9900', '#0099ff' ],
+    image: '/images/product-watercolor-paint.png',
+    category: '64c2342de32f4a51b19b925f',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9285'),
+    name: 'Healthy Snack Pack',
+    company: '64c23350e32f4a51b19b923e',
+    price: 19,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-snack-pack.png',
+    category: '64c2342de32f4a51b19b9256',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9286'),
+    name: 'Pet Grooming Kit',
+    company: '64c23350e32f4a51b19b923e',
+    price: 39,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-pet-grooming.png',
+    category: '64c2342de32f4a51b19b9257',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9287'),
+    name: 'Modern Sofa Set',
+    company: '64c23350e32f4a51b19b923f',
+    price: 899,
+    colors: [ '#000000', '#999999', '#cc6600' ],
+    image: '/images/product-sofa-set.png',
+    category: '64c2342de32f4a51b19b9258',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9288'),
+    name: 'Silver Necklace',
+    company: '64c23350e32f4a51b19b9240',
+    price: 149,
+    colors: [ '#ffffff', '#ffcc00', '#cc9900' ],
+    image: '/images/product-necklace.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9289'),
+    name: 'Outdoor Dining Set',
+    company: '64c23350e32f4a51b19b9241',
+    price: 599,
+    colors: [ '#333333', '#ff9900', '#660000' ],
+    image: '/images/product-dining-set.png',
+    category: '64c2342de32f4a51b19b925a',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b928a'),
+    name: 'Air Fryer',
+    company: '64c23350e32f4a51b19b9242',
+    price: 129,
+    colors: [ '#000000', '#666666', '#cc9900' ],
+    image: '/images/product-air-fryer.png',
+    category: '64c2342de32f4a51b19b925b',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b928b'),
+    name: 'Kids Educational Toys',
+    company: '64c23350e32f4a51b19b9243',
+    price: 39,
+    colors: [ '#ffffff', '#ff9900', '#0099ff' ],
+    image: '/images/product-educational-toys.png',
+    category: '64c2342de32f4a51b19b9253',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b928c'),
+    name: 'Wireless Earbuds',
+    company: '64c23350e32f4a51b19b9230',
+    price: 79,
+    colors: [ '#000000', '#ff0000', '#00ff00' ],
+    image: '/images/product-earbuds.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b928d'),
+    name: 'Robot Vacuum Cleaner',
+    company: '64c23350e32f4a51b19b9231',
+    price: 299,
+    colors: [ '#ffffff', '#ffcc00', '#00cc99' ],
+    image: '/images/product-vacuum.png',
+    category: '64c2342de32f4a51b19b925b',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b928e'),
+    name: 'Wireless Gaming Mouse',
+    company: '64c23350e32f4a51b19b9232',
+    price: 49,
+    colors: [ '#000000', '#999999', '#00ff00' ],
+    image: '/images/product-gaming-mouse.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b928f'),
+    name: 'Slow Cooker',
+    company: '64c23350e32f4a51b19b9233',
+    price: 79,
+    colors: [ '#333333', '#ff9900', '#990000' ],
+    image: '/images/product-slow-cooker.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9290'),
+    name: 'Designer Watch',
+    company: '64c23350e32f4a51b19b9234',
+    price: 299,
+    colors: [ '#000000', '#666666', '#ffcc00' ],
+    image: '/images/product-designer-watch.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9291'),
+    name: 'Fitness Tracker',
+    company: '64c23350e32f4a51b19b9235',
+    price: 129,
+    colors: [ '#ffffff', '#ff99cc', '#00cc99' ],
+    image: '/images/product-fitness-tracker.png',
+    category: '64c2342de32f4a51b19b925e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9292'),
+    name: 'Car Seat Covers',
+    company: '64c23350e32f4a51b19b9236',
+    price: 59,
+    colors: [ '#333333', '#99cc00', '#ffcc00' ],
+    image: '/images/product-car-seat-covers.png',
+    category: '64c2342de32f4a51b19b9254',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9293'),
+    name: 'Notebook Collection',
+    company: '64c23350e32f4a51b19b9237',
+    price: 19,
+    colors: [ '#ff0000', '#00ff00', '#0000ff' ],
+    image: '/images/product-notebook.png',
+    category: '64c2342de32f4a51b19b9255',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9294'),
+    name: 'Pet Food Bowl Set',
+    company: '64c23350e32f4a51b19b9238',
+    price: 29,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-pet-bowl-set.png',
+    category: '64c2342de32f4a51b19b9257',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9295'),
+    name: 'Elegant Dining Table',
+    company: '64c23350e32f4a51b19b9239',
+    price: 699,
+    colors: [ '#ffffff', '#ffcc00', '#cc9900' ],
+    image: '/images/product-dining-table.png',
+    category: '64c2342de32f4a51b19b925a',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9296'),
+    name: 'Diamond Ring',
+    company: '64c23350e32f4a51b19b923a',
+    price: 1999,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-diamond-ring.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9297'),
+    name: 'Outdoor Patio Set',
+    company: '64c23350e32f4a51b19b923b',
+    price: 1199,
+    colors: [ '#333333', '#ff9900', '#660000' ],
+    image: '/images/product-outdoor-patio.png',
+    category: '64c2342de32f4a51b19b925a',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9298'),
+    name: 'Blender & Juicer Combo',
+    company: '64c23350e32f4a51b19b923c',
+    price: 149,
+    colors: [ '#000000', '#666666', '#cc9900' ],
+    image: '/images/product-blender-juicer.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: false
+  },
+ 
+Products>

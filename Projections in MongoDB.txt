@@ -1,0 +1,93 @@
+Products> db.comments.find({'comments': {$size:2}},{comments: 1 })
+[
+  {
+    _id: 2,
+    comments: [
+      { user: 'Charlie', text: 'Very informative!' },
+      { user: 'David', text: 'Well explained.' }
+    ]
+  },
+  {
+    _id: 3,
+    comments: [
+      { user: 'Eva', text: 'Very helpful!' },
+      { user: 'Frank', text: 'Clear explanations.' }
+    ]
+  },
+  {
+    _id: 4,
+    comments: [
+      { user: 'Grace', text: 'Mind-blowing content!' },
+      { user: 'Henry', text: 'Impressive examples.' }
+    ]
+  },
+  {
+    _id: 5,
+    comments: [
+      { user: 'Ivy', text: 'Very practical advice!' },
+      { user: 'Jack', text: 'Helped me a lot.' }
+    ]
+  },
+  {
+    _id: 6,
+    comments: [
+      { user: 'Kevin', text: 'Invaluable insights!' },
+      { user: 'Lily', text: 'Well-structured explanations.' }
+    ]
+  },
+  {
+    _id: 7,
+    comments: [
+      { user: 'Alice', text: 'Awesome article!' },
+      { user: 'Vinod', text: 'Thanks for sharing.' }
+    ]
+  }
+]
+Products> db.comments.find({'comments': {$size:2}},{comments: 1 ,_id:0})
+[
+  {
+    comments: [
+      { user: 'Charlie', text: 'Very informative!' },
+      { user: 'David', text: 'Well explained.' }
+    ]
+  },
+  {
+    comments: [
+      { user: 'Eva', text: 'Very helpful!' },
+      { user: 'Frank', text: 'Clear explanations.' }
+    ]
+  },
+  {
+    comments: [
+      { user: 'Grace', text: 'Mind-blowing content!' },
+      { user: 'Henry', text: 'Impressive examples.' }
+    ]
+  },
+  {
+    comments: [
+      { user: 'Ivy', text: 'Very practical advice!' },
+      { user: 'Jack', text: 'Helped me a lot.' }
+    ]
+  },
+  {
+    comments: [
+      { user: 'Kevin', text: 'Invaluable insights!' },
+      { user: 'Lily', text: 'Well-structured explanations.' }
+    ]
+  },
+  {
+    comments: [
+      { user: 'Alice', text: 'Awesome article!' },
+      { user: 'Vinod', text: 'Thanks for sharing.' }
+    ]
+  }
+]
+Products> db.comments.find({'comments': {$size:2}},{title: 1 ,_id:0})
+[
+  { title: 'Deep Dive into Aggregation Framework' },
+  { title: 'Getting Started with NoSQL Databases' },
+  { title: 'Advanced Queries in MongoDB' },
+  { title: 'Optimizing MongoDB Performance' },
+  { title: 'Schema Design Best Practices' },
+  { title: 'Introduction to MongoDB' }
+]

@@ -1,0 +1,60 @@
+
+test> db.Book.find()
+
+test> use
+use BooksStore  use admin       use config      use local       use students
+
+test> use
+use BooksStore  use admin       use config      use local       use students
+
+test> use students
+switched to db students
+students> db.data.find()
+[
+  {
+    _id: ObjectId('65f9d85b01de3178cb6e6a00'),
+    name: 'priyush',
+    age: 26
+  },
+  { _id: ObjectId('65f9d90c01de3178cb6e6a01'), name: 'Rohit', age: 20 },
+  { _id: ObjectId('65f9d90c01de3178cb6e6a02'), name: 'isha', age: 24 },
+  {
+    _id: ObjectId('65f9d90c01de3178cb6e6a03'),
+    name: 'Nikhil',
+    age: 19
+  }
+]
+students> db.data.find().pr
+db.data.find().projection  db.data.find().pretty
+
+students> db.data.find().pretty()
+[
+  {
+    _id: ObjectId('65f9d85b01de3178cb6e6a00'),
+    name: 'priyush',
+    age: 26
+  },
+  { _id: ObjectId('65f9d90c01de3178cb6e6a01'), name: 'Rohit', age: 20 },
+  { _id: ObjectId('65f9d90c01de3178cb6e6a02'), name: 'isha', age: 24 },
+  {
+    _id: ObjectId('65f9d90c01de3178cb6e6a03'),
+    name: 'Nikhil',
+    age: 19
+  }
+]
+students> db.data.find().count()
+4
+students> db.data.find().limit(2)
+[
+  {
+    _id: ObjectId('65f9d85b01de3178cb6e6a00'),
+    name: 'priyush',
+    age: 26
+  },
+  { _id: ObjectId('65f9d90c01de3178cb6e6a01'), name: 'Rohit', age: 20 }
+]
+students> db.data.find().size()
+4
+students> db.data.find().next()
+{ _id: ObjectId('65f9d85b01de3178cb6e6a00'), name: 'priyush', age: 26 }
+students>

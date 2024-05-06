@@ -1,0 +1,302 @@
+Products> db.shop.find({$and: [{'price':{$gt:100}},{'name':'Diamond Ring'}]})
+[
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9281'),
+    name: 'Diamond Ring',
+    company: '64c23350e32f4a51b19b923a',
+    price: 1999,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-diamond-ring.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9296'),
+    name: 'Diamond Ring',
+    company: '64c23350e32f4a51b19b923a',
+    price: 1999,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-diamond-ring.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  }
+]
+Products> db.shop.find({$and: [{'price':{$gt:20000}},{'name':'Diamond Ring'}]})
+
+Products> db.shop.find({$or: [{'price':{$gt:2000}},{'name':'Diamond Ring'}]})
+[
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9281'),
+    name: 'Diamond Ring',
+    company: '64c23350e32f4a51b19b923a',
+    price: 1999,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-diamond-ring.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9296'),
+Products> db.shop.find({$or: [{'price':{$gt: 2000}},{'name':'Diamond Ring'}]})
+[   company: '64c23350e32f4a51b19b923a',
+  { price: 1999,
+    _id: ObjectId('64c236a2e32f4a51b19b9281'),],
+    name: 'Diamond Ring',ct-diamond-ring.png',
+    company: '64c23350e32f4a51b19b923a',,
+    price: 1999,false
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-diamond-ring.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9296'),
+    name: 'Diamond Ring',
+    company: '64c23350e32f4a51b19b923a',
+    price: 1999,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-diamond-ring.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  }
+]
+Products> db.shop.find({$or: [{'price':{$gt: 7000}},{'name':'Diamond Ring'}]})
+[
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9281'),
+    name: 'Diamond Ring',
+    company: '64c23350e32f4a51b19b923a',
+    price: 1999,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-diamond-ring.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9296'),
+    name: 'Diamond Ring',
+    company: '64c23350e32f4a51b19b923a',
+    price: 1999,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-diamond-ring.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  }
+]
+Products> db.shop.find({$nor: [{'price':{$gt: 7000}},{'name':'Diamond Ring'}]})
+[
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9262'),
+    name: 'Smartphone Model X',
+    company: '64c23350e32f4a51b19b9230',
+    price: 699,
+    colors: [ '#000000', '#ffffff', '#ff0000' ],
+    image: '/images/product-smartphone.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9263'),
+    name: 'Laptop Pro',
+    company: '64c23350e32f4a51b19b9231',
+    price: 1299,
+    colors: [ '#333333', '#cccccc', '#00ff00' ],
+    image: '/images/product-laptop.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9264'),
+    name: 'Smart Watch',
+    company: '64c23350e32f4a51b19b9232',
+    price: 249,
+    colors: [ '#000000', '#ff0000', '#00ff00' ],
+    image: '/images/product-smartwatch.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9265'),
+    name: 'Kitchen Blender',
+    company: '64c23350e32f4a51b19b9233',
+    price: 89,
+    colors: [ '#ffffff', '#ff9900', '#990000' ],
+    image: '/images/product-blender.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9266'),
+    name: 'Fashionable Sunglasses',
+    company: '64c23350e32f4a51b19b9234',
+    price: 129,
+    colors: [ '#000000', '#666666', '#ffcc00' ],
+    image: '/images/product-sunglasses.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9267'),
+    name: 'Skin Care Set',
+    company: '64c23350e32f4a51b19b9235',
+    price: 59,
+    colors: [ '#ffffff', '#ff99cc', '#00cc99' ],
+    image: '/images/product-skincare.png',
+    category: '64c2342de32f4a51b19b9251',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9268'),
+    name: 'Outdoor Camping Tent',
+    company: '64c23350e32f4a51b19b9236',
+    price: 299,
+    colors: [ '#333333', '#99cc00', '#ffcc00' ],
+    image: '/images/product-tent.png',
+    category: '64c2342de32f4a51b19b9252',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9269'),
+    name: 'Building Blocks Set',
+    company: '64c23350e32f4a51b19b9237',
+    price: 49,
+    colors: [ '#ff0000', '#00ff00', '#0000ff' ],
+    image: '/images/product-building-blocks.png',
+    category: '64c2342de32f4a51b19b9253',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926a'),
+    name: 'Car Jump Starter',
+    company: '64c23350e32f4a51b19b9238',
+    price: 89,
+    colors: [ '#000000', '#999999', '#00ff00' ],
+    image: '/images/product-jump-starter.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926b'),
+    name: 'Cookware Set',
+    company: '64c23350e32f4a51b19b9239',
+    price: 149,
+    colors: [ '#ffffff', '#ffcc00', '#cc9900' ],
+    image: '/images/product-cookware.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926c'),
+    name: 'Designer Handbag',
+    company: '64c23350e32f4a51b19b923a',
+    price: 349,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-handbag.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926d'),
+    name: 'Gym Equipment Set',
+    company: '64c23350e32f4a51b19b923b',
+    price: 799,
+    colors: [ '#333333', '#ff9900', '#660000' ],
+    image: '/images/product-gym-equipment.png',
+    category: '64c2342de32f4a51b19b925e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926e'),
+    name: 'Car Cleaning Kit',
+    company: '64c23350e32f4a51b19b923c',
+    price: 29,
+    colors: [ '#000000', '#666666', '#cc9900' ],
+    image: '/images/product-car-cleaning.png',
+    category: '64c2342de32f4a51b19b9254',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926f'),
+    name: 'Cookbook Collection',
+    company: '64c23350e32f4a51b19b923d',
+    price: 69,
+    colors: [ '#ffffff', '#ff9900', '#0099ff' ],
+    image: '/images/product-cookbook.png',
+    category: '64c2342de32f4a51b19b9255',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9270'),
+    name: 'Healthy Snack Pack',
+    company: '64c23350e32f4a51b19b923e',
+    price: 19,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-snack-pack.png',
+    category: '64c2342de32f4a51b19b9256',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9271'),
+    name: 'Pet Grooming Kit',
+    company: '64c23350e32f4a51b19b923e',
+    price: 39,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-pet-grooming.png',
+    category: '64c2342de32f4a51b19b9257',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9272'),
+    name: 'Modern Sofa Set',
+    company: '64c23350e32f4a51b19b923f',
+    price: 899,
+    colors: [ '#000000', '#999999', '#cc6600' ],
+    image: '/images/product-sofa-set.png',
+    category: '64c2342de32f4a51b19b9258',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9273'),
+    name: 'Silver Necklace',
+    company: '64c23350e32f4a51b19b9240',
+    price: 149,
+    colors: [ '#ffffff', '#ffcc00', '#cc9900' ],
+    image: '/images/product-necklace.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+Products> db.shop.find({$nor: [{'price':{$gt: 7000}},{'name':'Diamond Ring'}]}).count()
+10373ame: 'Outdoor Dining Set',
+Products> db.shop.find({'price' :{$eq:100}}).count()
+7   price: 599,
+Products> db.shop.find({'price' : {$not: {$eq:100} }}).count()
+10368mage: '/images/product-dining-set.png',
+Products> db.shop.find({'price' :  {$neq:100}}).count()
+MongoServerError[BadValue]: unknown operator: $neq
+Products>
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9275'),
+    name: 'Air Fryer',
+    company: '64c23350e32f4a51b19b9242',
+    price: 129,
+    colors: [ '#000000', '#666666', '#cc9900' ],
+    image: '/images/product-air-fryer.png',
+    category: '64c2342de32f4a51b19b925b',
+    isFeatured: false
+  }
+]
+Type "it" for more
+Products>
+
+
+
+
+
+
+
+
+
+
+
+

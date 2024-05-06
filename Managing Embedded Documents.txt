@@ -1,0 +1,44 @@
+Products> db.comments.find({'comments.user':'Lily'})
+[
+  {
+    _id: 6,
+    title: 'Schema Design Best Practices',
+    content: 'Designing schemas for optimal performance...',
+    author: 'Emily Brown',
+    comments: [
+      { user: 'Kevin', text: 'Invaluable insights!' },
+      { user: 'Lily', text: 'Well-structured explanations.' }
+    ],
+    metadata: { views: 700, likes: 65 }
+  }
+]
+Products> db.comments.find({'metadata.views':{$gt:1200}})
+[
+  {
+    _id: 4,
+    title: 'Advanced Queries in MongoDB',
+    content: 'Learn how to write complex queries...',
+    author: 'Michael Johnson',
+    comments: [
+      { user: 'Grace', text: 'Mind-blowing content!' },
+      { user: 'Henry', text: 'Impressive examples.' }
+    ],
+    metadata: { views: 1500, likes: 60 }
+  }
+]
+Products> db.comments.find({'comments.user':'Henry' , 'metadata.like' :{$gt:50}})
+
+Products> db.comments.find({'comments.user':'Henry' , 'metadata.likes' :{$gt:50}})
+[
+  {
+    _id: 4,
+    title: 'Advanced Queries in MongoDB',
+    content: 'Learn how to write complex queries...',
+    author: 'Michael Johnson',
+    comments: [
+      { user: 'Grace', text: 'Mind-blowing content!' },
+      { user: 'Henry', text: 'Impressive examples.' }
+    ],
+    metadata: { views: 1500, likes: 60 }
+  }
+]

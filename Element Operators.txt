@@ -1,0 +1,398 @@
+
+
+
+
+Products> db.shop.find({price :{$exists:true}})
+[
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9262'),
+    name: 'Smartphone Model X',
+    company: '64c23350e32f4a51b19b9230',
+    price: 699,
+    colors: [ '#000000', '#ffffff', '#ff0000' ],
+    image: '/images/product-smartphone.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9263'),
+    name: 'Laptop Pro',
+    company: '64c23350e32f4a51b19b9231',
+    price: 1299,
+    colors: [ '#333333', '#cccccc', '#00ff00' ],
+    image: '/images/product-laptop.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9264'),
+    name: 'Smart Watch',
+    company: '64c23350e32f4a51b19b9232',
+    price: 249,
+    colors: [ '#000000', '#ff0000', '#00ff00' ],
+    image: '/images/product-smartwatch.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9265'),
+    name: 'Kitchen Blender',
+    company: '64c23350e32f4a51b19b9233',
+    price: 89,
+    colors: [ '#ffffff', '#ff9900', '#990000' ],
+    image: '/images/product-blender.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9266'),
+    name: 'Fashionable Sunglasses',
+    company: '64c23350e32f4a51b19b9234',
+    price: 129,
+    colors: [ '#000000', '#666666', '#ffcc00' ],
+    image: '/images/product-sunglasses.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: false
+  },
+ 
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926d'),
+    name: 'Gym Equipment Set',
+    company: '64c23350e32f4a51b19b923b',
+    price: 799,
+    colors: [ '#333333', '#ff9900', '#660000' ],
+    image: '/images/product-gym-equipment.png',
+    category: '64c2342de32f4a51b19b925e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926e'),
+    name: 'Car Cleaning Kit',
+    company: '64c23350e32f4a51b19b923c',
+    price: 29,
+    colors: [ '#000000', '#666666', '#cc9900' ],
+    image: '/images/product-car-cleaning.png',
+    category: '64c2342de32f4a51b19b9254',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926f'),
+    name: 'Cookbook Collection',
+    company: '64c23350e32f4a51b19b923d',
+    price: 69,
+    colors: [ '#ffffff', '#ff9900', '#0099ff' ],
+    image: '/images/product-cookbook.png',
+    category: '64c2342de32f4a51b19b9255',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9270'),
+    name: 'Healthy Snack Pack',
+    company: '64c23350e32f4a51b19b923e',
+    price: 19,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-snack-pack.png',
+    category: '64c2342de32f4a51b19b9256',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9271'),
+    name: 'Pet Grooming Kit',
+    company: '64c23350e32f4a51b19b923e',
+    price: 39,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-pet-grooming.png',
+    category: '64c2342de32f4a51b19b9257',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9272'),
+    name: 'Modern Sofa Set',
+    company: '64c23350e32f4a51b19b923f',
+    price: 899,
+    colors: [ '#000000', '#999999', '#cc6600' ],
+    image: '/images/product-sofa-set.png',
+    category: '64c2342de32f4a51b19b9258',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9273'),
+    name: 'Silver Necklace',
+    company: '64c23350e32f4a51b19b9240',
+    price: 149,
+    colors: [ '#ffffff', '#ffcc00', '#cc9900' ],
+    image: '/images/product-necklace.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9274'),
+    name: 'Outdoor Dining Set',
+    company: '64c23350e32f4a51b19b9241',
+    price: 599,
+    colors: [ '#333333', '#ff9900', '#660000' ],
+    image: '/images/product-dining-set.png',
+    category: '64c2342de32f4a51b19b925a',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9275'),
+    name: 'Air Fryer',
+    company: '64c23350e32f4a51b19b9242',
+    price: 129,
+    colors: [ '#000000', '#666666', '#cc9900' ],
+    image: '/images/product-air-fryer.png',
+    category: '64c2342de32f4a51b19b925b',
+    isFeatured: false
+  }
+]
+Type "it" for more
+Products> db.shop.find({price :{$exists:false}}).count()
+20355
+Products> db.shop.find({price :{$exists:false}}).count()
+20
+Products> db.shop.find({price :{$exists:false},price:{$gt:1250}})
+[
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9263'),
+    name: 'Laptop Pro',
+    company: '64c23350e32f4a51b19b9231',
+    price: 1299,
+    colors: [ '#333333', '#cccccc', '#00ff00' ],
+    image: '/images/product-laptop.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c236a2e32f4a51b19b9281'),
+    name: 'Diamond Ring',
+    company: '64c23350e32f4a51b19b923a',
+    price: 1999,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-diamond-ring.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23707e32f4a51b19b9296'),
+    name: 'Diamond Ring',
+    company: '64c23350e32f4a51b19b923a',
+    price: 1999,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-diamond-ring.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  }
+]
+Products> db.shop.find({price :{$exists:false},price:{$gt:1250}}).count(
+... )
+3
+Products> db.shop.find({ price: { $exists: false }, price: { $gt: 1250 } }).count( )
+3
+Products> db.shop.find({price :{$type: 'number'}}).
+... count()
+10355
+Products> db.shop.find({ price: { $type: 'string' } }). count()
+0
+Products> db.shop.find({name: {$type: }}).count()
+Uncaught:
+SyntaxError: Unexpected token (1:28)
+
+> 1 | db.shop.find({name: {$type: }}).count()
+    |                             ^
+  2 |
+
+Products> db.shop.find({name: {$type:2}}).count()
+10375
+Products> db.shop.find({name: {$type:3}}).count()
+0
+Products> db.comments.find()
+
+Products> show dbs
+BooksStore  72.00 KiB
+Products     1.32 MiB
+admin       40.00 KiB
+config      96.00 KiB
+local       72.00 KiB
+students    72.00 KiB
+Products> show collections
+categories
+sales
+shop
+Products> show collections
+categories
+comments
+sales
+shop
+Products> db.comments.find()
+[
+  {
+    _id: 1,
+    title: 'Introduction to MongoDB',
+    content: 'MongoDB is a popular NoSQL database...',
+    author: 'John Doe',
+    comments: [
+      { user: 'Alice', text: 'Great article!' },
+      { user: 'Bob', text: 'Thanks for sharing.' },
+      { user: 'Eva', text: 'Its beatifull!' },
+      { user: 'jessy' }
+    ],
+    metadata: { views: 1000, likes: 50 }
+  },
+  {
+    _id: 2,
+    title: 'Deep Dive into Aggregation Framework',
+    content: 'The aggregation framework in MongoDB...',
+    author: 'Jane Smith',
+    comments: [
+      { user: 'Charlie', text: 'Very informative!' },
+      { user: 'David', text: 'Well explained.' }
+    ],
+    metadata: { views: 800, likes: 70 }
+  },
+  {
+    _id: 3,
+    title: 'Getting Started with NoSQL Databases',
+    content: 'NoSQL databases provide flexible data models...',
+    author: 'Sarah Williams',
+    comments: [
+      { user: 'Eva', text: 'Very helpful!' },
+      { user: 'Frank', text: 'Clear explanations.' }
+    ],
+    metadata: { views: 1200, likes: 40 }
+  },
+  {
+    _id: 4,
+    title: 'Advanced Queries in MongoDB',
+    content: 'Learn how to write complex queries...',
+    author: 'Michael Johnson',
+    comments: [
+      { user: 'Grace', text: 'Mind-blowing content!' },
+      { user: 'Henry', text: 'Impressive examples.' }
+    ],
+    metadata: { views: 1500, likes: 60 }
+  },
+  {
+    _id: 5,
+    title: 'Optimizing MongoDB Performance',
+    content: 'Tips and tricks to improve MongoDB performance...',
+    author: 'Alex Turner',
+    comments: [
+      { user: 'Ivy', text: 'Very practical advice!' },
+      { user: 'Jack', text: 'Helped me a lot.' }
+    ],
+    metadata: { views: 900, likes: 55 }
+  },
+  {
+    _id: 6,
+    title: 'Schema Design Best Practices',
+    content: 'Designing schemas for optimal performance...',
+    author: 'Emily Brown',
+    comments: [
+      { user: 'Kevin', text: 'Invaluable insights!' },
+      { user: 'Lily', text: 'Well-structured explanations.' }
+    ],
+    metadata: { views: 700, likes: 65 }
+  },
+  {
+    _id: 7,
+    title: 'Introduction to MongoDB',
+    content: 'MongoDB is a popular NoSQL database...',
+    author: 'Vinod Thapa',
+    comments: [
+      { user: 'Alice', text: 'Awesome article!' },
+      { user: 'Vinod', text: 'Thanks for sharing.' }
+    ],
+    metadata: { views: 1000, likes: 70 }
+  }
+]
+Products> db.comments.find({'comments': {$size:1}})
+
+Products> db.comments.find({'comments': {$size:4}})
+[
+  {
+    _id: 1,
+    title: 'Introduction to MongoDB',
+    content: 'MongoDB is a popular NoSQL database...',
+    author: 'John Doe',
+    comments: [
+      { user: 'Alice', text: 'Great article!' },
+      { user: 'Bob', text: 'Thanks for sharing.' },
+      { user: 'Eva', text: 'Its beatifull!' },
+      { user: 'jessy' }
+    ],
+    metadata: { views: 1000, likes: 50 }
+  }
+]
+Products> db.comments.find({'comments': {$size:2}})
+[
+  {
+    _id: 2,
+    title: 'Deep Dive into Aggregation Framework',
+    content: 'The aggregation framework in MongoDB...',
+    author: 'Jane Smith',
+    comments: [
+      { user: 'Charlie', text: 'Very informative!' },
+      { user: 'David', text: 'Well explained.' }
+    ],
+    metadata: { views: 800, likes: 70 }
+  },
+  {
+    _id: 3,
+    title: 'Getting Started with NoSQL Databases',
+    content: 'NoSQL databases provide flexible data models...',
+    author: 'Sarah Williams',
+    comments: [
+      { user: 'Eva', text: 'Very helpful!' },
+      { user: 'Frank', text: 'Clear explanations.' }
+    ],
+    metadata: { views: 1200, likes: 40 }
+  },
+  {
+    _id: 4,
+    title: 'Advanced Queries in MongoDB',
+    content: 'Learn how to write complex queries...',
+    author: 'Michael Johnson',
+    comments: [
+      { user: 'Grace', text: 'Mind-blowing content!' },
+      { user: 'Henry', text: 'Impressive examples.' }
+    ],
+    metadata: { views: 1500, likes: 60 }
+  },
+  {
+    _id: 5,
+    title: 'Optimizing MongoDB Performance',
+    content: 'Tips and tricks to improve MongoDB performance...',
+    author: 'Alex Turner',
+    comments: [
+      { user: 'Ivy', text: 'Very practical advice!' },
+      { user: 'Jack', text: 'Helped me a lot.' }
+    ],
+    metadata: { views: 900, likes: 55 }
+  },
+  {
+    _id: 6,
+    title: 'Schema Design Best Practices',
+    content: 'Designing schemas for optimal performance...',
+    author: 'Emily Brown',
+    comments: [
+      { user: 'Kevin', text: 'Invaluable insights!' },
+      { user: 'Lily', text: 'Well-structured explanations.' }
+    ],
+    metadata: { views: 700, likes: 65 }
+  },
+  {
+    _id: 7,
+    title: 'Introduction to MongoDB',
+    content: 'MongoDB is a popular NoSQL database...',
+    author: 'Vinod Thapa',
+    comments: [
+      { user: 'Alice', text: 'Awesome article!' },
+      { user: 'Vinod', text: 'Thanks for sharing.' }
+    ],
+    metadata: { views: 1000, likes: 70 }
+  }
+]
+Products> db.comments.find({'comments': {$size:5}})
+
+Products>
