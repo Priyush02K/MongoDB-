@@ -1,0 +1,241 @@
+Microsoft Windows [Version 10.0.19045.4291]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\priyush>mongosh
+Current Mongosh Log ID: 6639e035928c5221644e7ee8
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.1.5
+Using MongoDB:          7.0.6
+Using Mongosh:          2.1.5
+mongosh 2.2.5 is available for download: https://www.mongodb.com/try/download/shell
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2024-05-06T13:59:40.515+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> use Products
+switched to db Products
+Products> db.shop.find()
+[
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9262'),
+    name: 'Smartphone Model X',
+    company: '64c23350e32f4a51b19b9230',
+    price: 699,
+    colors: [ '#000000', '#ffffff', '#ff0000' ],
+    image: '/images/product-smartphone.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9263'),
+    name: 'Laptop Pro',
+    company: '64c23350e32f4a51b19b9231',
+    price: 1299,
+    colors: [ '#333333', '#cccccc', '#00ff00' ],
+    image: '/images/product-laptop.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9264'),
+    name: 'Smart Watch',
+    company: '64c23350e32f4a51b19b9232',
+    price: 249,
+    colors: [ '#000000', '#ff0000', '#00ff00' ],
+    image: '/images/product-smartwatch.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9265'),
+    name: 'Kitchen Blender',
+    company: '64c23350e32f4a51b19b9233',
+    price: 89,
+    colors: [ '#ffffff', '#ff9900', '#990000' ],
+    image: '/images/product-blender.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9266'),
+    name: 'Fashionable Sunglasses',
+    company: '64c23350e32f4a51b19b9234',
+    price: 129,
+    colors: [ '#000000', '#666666', '#ffcc00' ],
+    image: '/images/product-sunglasses.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9267'),
+    name: 'Skin Care Set',
+    company: '64c23350e32f4a51b19b9235',
+    price: 59,
+    colors: [ '#ffffff', '#ff99cc', '#00cc99' ],
+    image: '/images/product-skincare.png',
+    category: '64c2342de32f4a51b19b9251',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9268'),
+    name: 'Outdoor Camping Tent',
+    company: '64c23350e32f4a51b19b9236',
+    price: 299,
+    colors: [ '#333333', '#99cc00', '#ffcc00' ],
+    image: '/images/product-tent.png',
+    category: '64c2342de32f4a51b19b9252',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9269'),
+    name: 'Building Blocks Set',
+    company: '64c23350e32f4a51b19b9237',
+    price: 49,
+    colors: [ '#ff0000', '#00ff00', '#0000ff' ],
+    image: '/images/product-building-blocks.png',
+    category: '64c2342de32f4a51b19b9253',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926a'),
+    name: 'Car Jump Starter',
+    company: '64c23350e32f4a51b19b9238',
+    price: 89,
+    colors: [ '#000000', '#999999', '#00ff00' ],
+    image: '/images/product-jump-starter.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926b'),
+    name: 'Cookware Set',
+    company: '64c23350e32f4a51b19b9239',
+    price: 149,
+    colors: [ '#ffffff', '#ffcc00', '#cc9900' ],
+    image: '/images/product-cookware.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926c'),
+    name: 'Designer Handbag',
+    company: '64c23350e32f4a51b19b923a',
+    price: 349,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-handbag.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926d'),
+    name: 'Gym Equipment Set',
+    company: '64c23350e32f4a51b19b923b',
+    price: 799,
+    colors: [ '#333333', '#ff9900', '#660000' ],
+    image: '/images/product-gym-equipment.png',
+    category: '64c2342de32f4a51b19b925e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926e'),
+    name: 'Car Cleaning Kit',
+    company: '64c23350e32f4a51b19b923c',
+    price: 29,
+    colors: [ '#000000', '#666666', '#cc9900' ],
+    image: '/images/product-car-cleaning.png',
+    category: '64c2342de32f4a51b19b9254',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926f'),
+    name: 'Cookbook Collection',
+    company: '64c23350e32f4a51b19b923d',
+    price: 69,
+    colors: [ '#ffffff', '#ff9900', '#0099ff' ],
+    image: '/images/product-cookbook.png',
+    category: '64c2342de32f4a51b19b9255',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9270'),
+    name: 'Healthy Snack Pack',
+    company: '64c23350e32f4a51b19b923e',
+    price: 19,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-snack-pack.png',
+    category: '64c2342de32f4a51b19b9256',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9271'),
+    name: 'Pet Grooming Kit',
+    company: '64c23350e32f4a51b19b923e',
+    price: 39,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-pet-grooming.png',
+    category: '64c2342de32f4a51b19b9257',
+    isFeatured: false
+
+Products> db.shop.find({_id: ObjectId("64c2363be32f4a51b19b9271")})
+[
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9271'),
+    name: 'Pet Grooming Kit',
+    company: '64c23350e32f4a51b19b923e',
+    price: 39,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-pet-grooming.png',
+    category: '64c2342de32f4a51b19b9257',
+    isFeatured: false
+  }
+]
+Products> db.shop.updateOne({_id: ObjectId("64c2363be32f4a51b19b9271"},{$set: {'price': 45}})
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:59)
+
+> 1 | db.shop.updateOne({_id: ObjectId("64c2363be32f4a51b19b9271"},{$set: {'price': 45}})
+    |                                                            ^
+  2 |
+
+Products> db.shop.updateOne({_id: ObjectId("64c2363be32f4a51b19b9271")},{$set: {'price': 45}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Products> db.shop.find({_id: ObjectId("64c2363be32f4a51b19b9271")})
+[
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9271'),
+    name: 'Pet Grooming Kit',
+    company: '64c23350e32f4a51b19b923e',
+    price: 45,
+    colors: [ '#ffffff', '#ffcc00', '#99cc00' ],
+    image: '/images/product-pet-grooming.png',
+    category: '64c2342de32f4a51b19b9257',
+    isFeatured: false
+  }
+]
+Products> db.shop.updateOne({name: 'Designer Handbag'},{$set: {'isFeatured': 'true'}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Products> db.shop.find({'price':120}).count()
+5
+Products> db.shop.updateMany({price: 120},{$set: {'isFeatured': 'true'}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 5,
+  modifiedCount: 5,
+  upsertedCount: 0
+}
