@@ -1,0 +1,55 @@
+{
+  "employees": [
+    {
+      "_id": {"$oid": "5f0ad11992e6dfa3fc48de00"},
+      "name": "Priyush",
+      "department": "Sale",
+      "age": 27,
+      "firstSalary": 30000,
+      "secondSalary": 35000
+    },
+    {
+      "_id": {"$oid": "5f0ad11992e6dfa3fc48de00"},
+      "name": "King",
+      "department": "Development",
+      "age": 21,
+      "firstSalary": 34000,
+      "secondSalary": 65000
+    },
+    {
+      "_id": {"$oid": "5f0ad11992e6dfa3fc48de00"},
+      "name": "olin",
+      "department": "Operations",
+      "age": 32,
+      "firstSalary": 27000,
+      "secondSalary": 30000
+    },
+    {
+      "_id": {"$oid": "5f0ad11992e6dfa3fc48de00"},
+      "name": "Amu",
+      "department": "HR",
+      "age": 35,
+      "firstSalary": 38000,
+      "secondSalary": 35000
+    },
+    {
+      "_id": {"$oid": "5f0ad11992e6dfa3fc48de00"},
+      "name": "Ram",
+      "department": "Customer Service",
+      "age": 30,
+      "firstSalary": 37000,
+      "secondSalary": 35000
+    },
+    {
+      "_id": {"$oid": "5f0ad11992e6dfa3fc48de00"},
+      "name": "Sunil",
+      "department": "Development",
+      "age": 27,
+      "firstSalary": 40000,
+      "secondSalary": 35000
+    }
+              
+    
+    
+  ]
+}

@@ -1,0 +1,293 @@
+
+Products> db.shop.aggregate([{$match: {'name':'Sleek Wooden Tuna'}}])
+[
+  {
+    _id: ObjectId('64c23edf9dc1fb2f85601ae5'),
+    name: 'Sleek Wooden Tuna',
+    company: ObjectId('64c23350e32f4a51b19b9235'),
+    price: 101,
+    colors: [ '#29505b' ],
+    image: '/images/product-Recycled.png',
+    category: ObjectId('64c2342de32f4a51b19b9255'),
+    isFeatured: false,
+    __v: 0
+  },
+  {
+    _id: ObjectId('64c23edf9dc1fb2f856027db'),
+    name: 'Sleek Wooden Tuna',
+    company: ObjectId('64c23350e32f4a51b19b9241'),
+    price: 363,
+    colors: [ '#464438' ],
+    image: '/images/product-Sleek.png',
+    category: ObjectId('64c2342de32f4a51b19b9256'),
+    isFeatured: false,
+    __v: 0
+  }
+]
+Products> db.shop.aggregate([{$match: {price:{ $gt:50}}}])
+[
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9262'),
+    name: 'Smartphone Model X',
+    company: '64c23350e32f4a51b19b9230',
+    price: 699,
+    colors: [ '#000000', '#ffffff', '#ff0000' ],
+    image: '/images/product-smartphone.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9263'),
+    name: 'Laptop Pro',
+    company: '64c23350e32f4a51b19b9231',
+    price: 1299,
+    colors: [ '#333333', '#cccccc', '#00ff00' ],
+    image: '/images/product-laptop.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9264'),
+    name: 'Smart Watch',
+    company: '64c23350e32f4a51b19b9232',
+    price: 249,
+    colors: [ '#000000', '#ff0000', '#00ff00' ],
+    image: '/images/product-smartwatch.png',
+    category: '64c2342de32f4a51b19b924e',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9265'),
+    name: 'Kitchen Blender',
+    company: '64c23350e32f4a51b19b9233',
+    price: 89,
+    colors: [ '#ffffff', '#ff9900', '#990000' ],
+    image: '/images/product-blender.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9266'),
+    name: 'Fashionable Sunglasses',
+    company: '64c23350e32f4a51b19b9234',
+    price: 129,
+    colors: [ '#000000', '#666666', '#ffcc00' ],
+    image: '/images/product-sunglasses.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9267'),
+    name: 'Skin Care Set',
+    company: '64c23350e32f4a51b19b9235',
+    price: 59,
+    colors: [ '#ffffff', '#ff99cc', '#00cc99' ],
+    image: '/images/product-skincare.png',
+    category: '64c2342de32f4a51b19b9251',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b9268'),
+    name: 'Outdoor Camping Tent',
+    company: '64c23350e32f4a51b19b9236',
+    price: 299,
+    colors: [ '#333333', '#99cc00', '#ffcc00' ],
+    image: '/images/product-tent.png',
+    category: '64c2342de32f4a51b19b9252',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926a'),
+    name: 'Car Jump Starter',
+    company: '64c23350e32f4a51b19b9238',
+    price: 89,
+    colors: [ '#000000', '#999999', '#00ff00' ],
+    image: '/images/product-jump-starter.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926b'),
+    name: 'Cookware Set',
+    company: '64c23350e32f4a51b19b9239',
+    price: 149,
+    colors: [ '#ffffff', '#ffcc00', '#cc9900' ],
+    image: '/images/product-cookware.png',
+    category: '64c2342de32f4a51b19b924f',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926c'),
+    name: 'Designer Handbag',
+    company: '64c23350e32f4a51b19b923a',
+    price: 349,
+    colors: [ '#000000', '#cc6600', '#663300' ],
+    image: '/images/product-handbag.png',
+    category: '64c2342de32f4a51b19b9250',
+    isFeatured: 'true'
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926d'),
+    name: 'Gym Equipment Set',
+    company: '64c23350e32f4a51b19b923b',
+    price: 799,
+    colors: [ '#333333', '#ff9900', '#660000' ],
+    image: '/images/product-gym-equipment.png',
+    category: '64c2342de32f4a51b19b925e',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c23601e32f4a51b19b926f'),
+    name: 'Cookbook Collection',
+    company: '64c23350e32f4a51b19b923d',
+    price: 69,
+    colors: [ '#ffffff', '#ff9900', '#0099ff' ],
+    image: '/images/product-cookbook.png',
+    category: '64c2342de32f4a51b19b9255',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9272'),
+    name: 'Modern Sofa Set',
+    company: '64c23350e32f4a51b19b923f',
+    price: 899,
+    colors: [ '#000000', '#999999', '#cc6600' ],
+    image: '/images/product-sofa-set.png',
+    category: '64c2342de32f4a51b19b9258',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9273'),
+    name: 'Silver Necklace',
+    company: '64c23350e32f4a51b19b9240',
+    price: 149,
+    colors: [ '#ffffff', '#ffcc00', '#cc9900' ],
+    image: '/images/product-necklace.png',
+    category: '64c2342de32f4a51b19b9259',
+    isFeatured: false
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9274'),
+    name: 'Outdoor Dining Set',
+    company: '64c23350e32f4a51b19b9241',
+    price: 599,
+    colors: [ '#333333', '#ff9900', '#660000' ],
+    image: '/images/product-dining-set.png',
+    category: '64c2342de32f4a51b19b925a',
+    isFeatured: true
+  },
+  {
+    _id: ObjectId('64c2363be32f4a51b19b9275'),
+    name: 'Air Fryer',
+    company: '64c23350e32f4a51b19b9242',
+    price: 129,
+    colors: [ '#000000', '#666666', '#cc9900' ],
+    image: '/images/product-air-fryer.png',
+    category: '64c2342de32f4a51b19b925b',
+    isFeatured: false
+Products>
+
+
+-----------------------------------------------------------Day02---------------------------------------------
+Microsoft Windows [Version 10.0.19045.4291]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\priyush>mongodh
+'mongodh' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\priyush>mongosh
+
+Products> db.shop.aggregate([
+... { $match :{ price: {$gt: 1200}}},
+... {
+... $group: {
+... _id: '$price',
+... allColors:{$push:'$colors'}
+... }
+... }
+... ])
+[
+  {
+    _id: 1999,
+    allColors: [
+      [ '#000000', '#cc6600', '#663300' ],
+      [ '#000000', '#cc6600', '#663300' ]
+    ]
+  },
+  { _id: 1299, allColors: [ [ '#333333', '#cccccc', '#00ff00' ] ] }
+]
+Products> db.shop.aggregate([{$unwind: '$colors'} { $match: { price: { $gt: 1200 } } }, { $group: { _id: '$price', allColors: { $aaToSet: '$colors' } } }] )
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:40)
+
+> 1 | db.shop.aggregate([{$unwind: '$colors'} { $match: { price: { $gt: 1200 } } }, { $group: { _id: '$price', allColors: { $aaToSet: '$colors' } } }] )
+    |                                         ^
+  2 |
+
+
+Products> db.shop.aggregate([{$unwind: '$colors'}, { $match: { price: { $gt: 1200 } } }, { $group: { _id: '$price', allColors: { $addToSet: '$colors' } } }] )
+[
+  { _id: 1299, allColors: [ '#cccccc', '#00ff00', '#333333' ] },
+  { _id: 1999, allColors: [ '#000000', '#cc6600', '#663300' ] }
+]
+Products> db.col.find(_
+... )
+BSONError: Cannot convert circular structure to BSON
+Products> db.col.find()
+[
+  {
+    _id: ObjectId('64c23350e32f4a51b19b9201'),
+    name: 'Document 1',
+    values: [ 10, 20, 30, 40, 50 ]
+  },
+  {
+    _id: ObjectId('64c23350e32f4a51b19b9202'),
+    name: 'Document 2',
+    values: [ 15, 25, 35, 45, 55 ]
+  },
+  {
+    _id: ObjectId('64c23350e32f4a51b19b9203'),
+    name: 'Document 3',
+    values: [ 5, 15, 25, 35, 45 ]
+  },
+  {
+    _id: ObjectId('64c23350e32f4a51b19b9204'),
+    name: 'Document 4',
+    values: [ 30, 40, 50, 60, 70 ]
+  },
+  {
+    _id: ObjectId('64c23350e32f4a51b19b9205'),
+    name: 'Document 5',
+    values: [ 25, 35, 45, 55, 65 ]
+  }
+]
+Products> db.col.aggregate([{$project:{name:1,tempValue:{$filter:{input:'$values',as:'val',cond:{$gt:['$$val',30]}}}}}])
+[
+  {
+    _id: ObjectId('64c23350e32f4a51b19b9201'),
+    name: 'Document 1',
+    tempValue: [ 40, 50 ]
+  },
+  {
+    _id: ObjectId('64c23350e32f4a51b19b9202'),
+    name: 'Document 2',
+    tempValue: [ 35, 45, 55 ]
+  },
+  {
+    _id: ObjectId('64c23350e32f4a51b19b9203'),
+    name: 'Document 3',
+    tempValue: [ 35, 45 ]
+  },
+  {
+    _id: ObjectId('64c23350e32f4a51b19b9204'),
+    name: 'Document 4',
+    tempValue: [ 40, 50, 60, 70 ]
+  },
+  {
+    _id: ObjectId('64c23350e32f4a51b19b9205'),
+    name: 'Document 5',
+    tempValue: [ 35, 45, 55, 65 ]
+  }
+]
+Products>

@@ -1,0 +1,28 @@
+b.employee.aggregate([ 
+... {$project: {"name.first": 1, _id: 0, dept: 
+... {$concat: ["My department is: ", "$department"]}}}])
+
+
+
+db.employee.aggregate([
+... {$project: {"name.first": 1, _id: 0, result:
+... {$strcasecmp: ["$department", "development"]}}}])
+
+
+[
+  { _id: ObjectId('65f9d85b01de3178cb6e6a00'), name: 'PRIYUSH' },
+  { _id: ObjectId('65f9d90c01de3178cb6e6a02'), name: 'ISHA' },
+  { _id: ObjectId('65f9d90c01de3178cb6e6a03'), name: 'NIKHIL' },
+  { _id: ObjectId('66004d98af932b693e517f01'), name: 'PRIYUSH' },
+  { _id: ObjectId('66004e61af932b693e517f02'), name: 'HARDIK' },
+  { _id: ObjectId('66004e61af932b693e517f03'), name: 'SAKSHI' }
+]
+students> db.data.aggregate([ { $project: { name: { $toLower: "$name" } } }])
+[
+  { _id: ObjectId('65f9d85b01de3178cb6e6a00'), name: 'priyush' },
+  { _id: ObjectId('65f9d90c01de3178cb6e6a02'), name: 'isha' },
+  { _id: ObjectId('65f9d90c01de3178cb6e6a03'), name: 'nikhil' },
+  { _id: ObjectId('66004d98af932b693e517f01'), name: 'priyush' },
+  { _id: ObjectId('66004e61af932b693e517f02'), name: 'hardik' },
+  { _id: ObjectId('66004e61af932b693e517f03'), name: 'sakshi' }
+]

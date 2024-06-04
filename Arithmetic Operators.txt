@@ -1,0 +1,22 @@
+db.Employee.aggregate([{$match: {department: "Development"}},
+... {$project: {name: 1, tSalary: {$add: 
+                ["$firstSalary", "$secondSalary"]}}}]
+
+db.Employee.aggregate([{$match: {department: "Development"}},
+... {$project: {result:
+... {$subtract:["$secondSalary", "$firstSalary"]}}}])
+
+db.employee.aggregate([{$match: {department: "Development"}},
+... {$project: {name: 1, newSalary: {$multiply: ["$salary", 2]}}}])
+
+
+db.employee.aggregate([{$match: {department: "Development"}},
+... {$project: {name: 1, halfSalary: {$divide: ["$salary", 2]}}}])
+
+db.Employee.aggregate([{$match: {department: "Development"}},
+... {$project: {name:1, tSalary: {$abs: 
+                {$add: ["$firstSalary", "$secondSalary"]}}}}])
+
+db.employee.aggregate([{$match: {department: "Development"}},
+... {$project: {perfoPoint: 1, 
+      floorPoint: {$floor: "$perfoPoint"}}}])
